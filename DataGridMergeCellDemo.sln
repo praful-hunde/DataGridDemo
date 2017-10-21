@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridMergedCells", "DataGridMergedCells\DataGridMergedCells.csproj", "{A10DAEF0-334C-463E-8C65-C16E3B4368FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridMergeCell", "DataGridMergedCells\DataGridMergeCell.csproj", "{A10DAEF0-334C-463E-8C65-C16E3B4368FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
