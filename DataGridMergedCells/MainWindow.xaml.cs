@@ -47,8 +47,9 @@ namespace DataGridMergedCells
             fruitBasket.Add(new Item("Dragon Fruit", 50));
 
             var vegetableBasket = new Basket("Vegetable");
-            vegetableBasket.Add(new Item("Bringel", 5));
+            vegetableBasket.Add(new Item("Brinjal", 5));
             vegetableBasket.Add(new Item("Broccoli", 5));
+            vegetableBasket.Add(new Item("Onion", 3)); 
 
             baskets.Add(fruitBasket);
             baskets.Add(vegetableBasket);
