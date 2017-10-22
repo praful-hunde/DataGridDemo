@@ -29,17 +29,23 @@ namespace DataGridMergedCells
 
             int rowHeight = 20; //// itemDataGrid row height is 20 in xaml
 
+            //// Create a list of annonymous type with properties Name an RowHeight.
+            //// RowHeight = Height of one row * number of items in current basket.
             var basketNameData = baskets.Select(x => new { Name = x.Name, RowHeight = rowHeight * x.Count });
 
             basketNameDataGrid.ItemsSource = basketNameData.ToList();
 
+            //// Get list of  all Items in all baskets and assign as ItemsSource to second datagrid
             itemDataGrid.ItemsSource = baskets.SelectMany(basket => basket).ToList();
         }
 
-
-        private Baskets GetData()
+        /// <summary>
+        /// Gets some data to bind to view
+        /// </summary>
+        /// <returns>Basket Collection</returns>
+        private BasketCollection GetData()
         {
-            var baskets = new Baskets();
+            var baskets = new BasketCollection();
 
             var fruitBasket = new Basket("Fruit");
             fruitBasket.Add(new Item("Alphonso Mango", 80));
